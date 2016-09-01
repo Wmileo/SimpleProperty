@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+Property.h"
+
 
 @interface ViewController ()
 
@@ -16,6 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    NSLog(@"%@",self.view.debugDescription);
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
