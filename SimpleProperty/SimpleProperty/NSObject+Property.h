@@ -32,6 +32,8 @@
 -(void)fillPropertyWithDictionary:(NSDictionary *)dictionary;
 -(void)fillValue:(id)value withProperty:(Property *)pro;
 
++(NSArray *)instanceObjectsWithDictionarys:(NSArray<NSDictionary *> *)dics createObject:(NSObject *(^)())create;
+
 //返回字典格式的数据
 -(NSDictionary *)propertyDictionaryValue;
 -(NSArray<Property *> *)properties;

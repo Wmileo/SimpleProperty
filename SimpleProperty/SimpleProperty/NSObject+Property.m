@@ -116,6 +116,25 @@ static char keyProperties;
     }
 }
 
++(NSArray *)instanceObjectsWithDictionarys:(NSArray<NSDictionary *> *)dics createObject:(NSObject *(^)())create{
+    if ([PropertyTools isValidArrayValue:dics]) {
+        NSMutableArray *arr = [NSMutableArray arrayWithCapacity:dics.count];
+        [dics enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if ([PropertyTools isValidDictionaryValue:obj] && create) {
+                NSObject *object = create();
+                [object fillPropertyWithDictionary:obj];
+                [arr addObject:object];
+            }else{
+                NSLog(@"----no creat instance   or   invalid value:%@ (+instanceObjects)  no a dictionary object",obj);
+                [arr addObject:obj];
+            }
+        }];
+        return [arr copy];
+    }else{
+        NSLog(@"----invalid value:%@ new value:%@ (+instanceObjects)  no a array object",dics,@[]);
+        return @[];
+    }
+}
 
 #pragma mark - debug
 

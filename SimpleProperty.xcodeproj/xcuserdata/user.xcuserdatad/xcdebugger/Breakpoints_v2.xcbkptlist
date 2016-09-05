@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SimplePropertyTests/SimplePropertyTests.m"
-            timestampString = "494404854.676902"
+            timestampString = "494759651.521503"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "-testExample"
             landmarkType = "5">
          </BreakpointContent>
