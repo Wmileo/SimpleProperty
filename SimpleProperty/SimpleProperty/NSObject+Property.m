@@ -96,6 +96,9 @@ static char keyProperties;
             }
         }
         [self setValue:newValue forKey:pro.name];
+        if ([self respondsToSelector:@selector(didValueWithProperty:value:)]) {
+            [self didValueWithProperty:pro value:newValue];
+        }
     }
 }
 
@@ -113,6 +116,9 @@ static char keyProperties;
                 }
             }
         }
+    }
+    if ([self respondsToSelector:@selector(didValueAllProperties)]) {
+        [self didValueAllProperties];
     }
 }
 
