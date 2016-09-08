@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SimpleProperty"
-  s.version      = "0.0.3"
+  s.version      = "0.1.1"
   s.summary      = "Property pick up"
   s.description  = <<-DESC
 
