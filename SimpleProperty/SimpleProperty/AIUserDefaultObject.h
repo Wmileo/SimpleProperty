@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+Property.h"
+#import "ValuePropertyObject.h"
 
 @protocol AIUserDefaultDelegate <NSObject>
 
@@ -21,7 +21,7 @@
 @end
 
 
-@interface AIUserDefaultObject : NSObject <AIUserDefaultDelegate>
+@interface AIUserDefaultObject : ValuePropertyObject <AIUserDefaultDelegate>
 
 -(instancetype)initWithIdentification:(NSString *)identification;
 

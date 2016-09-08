@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+Property.h"
+#import "ValuePropertyObject.h"
 #import <UIKit/UIKit.h>
 #import "ARR.h"
 
-@interface Test : NSObject
+@interface Test : ValuePropertyObject
 
 @property (nonatomic, copy) NSArray<ARR *> *aArr;
 

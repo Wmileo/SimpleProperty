@@ -37,9 +37,6 @@
     arr.iii = 99;
     [arr clearUserDefault];
     
-    NSArray *arrrr = [NSObject instanceObjectsWithDictionarys:@[@{@"iii":@111},@{@"iii":@222},@{@"iii":@333}] createObject:^NSObject *{
-        return [[ARR alloc] init];
-    }];
     
     
 //    NSLog(@"done , t %@",t.debugDescription);

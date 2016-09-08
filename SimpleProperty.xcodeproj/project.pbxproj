@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE83523A1D8134CE00939B24 /* ValuePropertyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8352391D8134CE00939B24 /* ValuePropertyObject.m */; };
 		CEEBBD1B1D73E9C000BCF524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD1A1D73E9C000BCF524 /* main.m */; };
 		CEEBBD1E1D73E9C000BCF524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD1D1D73E9C000BCF524 /* AppDelegate.m */; };
 		CEEBBD211D73E9C000BCF524 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD201D73E9C000BCF524 /* ViewController.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE8352381D8134CE00939B24 /* ValuePropertyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValuePropertyObject.h; sourceTree = "<group>"; };
+		CE8352391D8134CE00939B24 /* ValuePropertyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValuePropertyObject.m; sourceTree = "<group>"; };
 		CEEBBD161D73E9C000BCF524 /* SimpleProperty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleProperty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEBBD1A1D73E9C000BCF524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEEBBD1C1D73E9C000BCF524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				CEEBBD511D74083E00BCF524 /* PropertyTools.m */,
 				CEEBBD4D1D73EA6200BCF524 /* NSObject+Property.h */,
 				CEEBBD4E1D73EA6200BCF524 /* NSObject+Property.m */,
+				CE8352381D8134CE00939B24 /* ValuePropertyObject.h */,
+				CE8352391D8134CE00939B24 /* ValuePropertyObject.m */,
 				CEFF45B71D76EFBD0017C78F /* AIUserDefaultObject.h */,
 				CEFF45B81D76EFBD0017C78F /* AIUserDefaultObject.m */,
 			);
@@ -316,6 +321,7 @@
 				CEEBBD521D74083E00BCF524 /* PropertyTools.m in Sources */,
 				CEEBBD4F1D73EA6200BCF524 /* NSObject+Property.m in Sources */,
 				CEEBBD1B1D73E9C000BCF524 /* main.m in Sources */,
+				CE83523A1D8134CE00939B24 /* ValuePropertyObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
