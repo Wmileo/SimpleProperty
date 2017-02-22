@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3642D921E5DAB2B00F6CC5F /* SimpleProperty.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B3642D911E5DAB2B00F6CC5F /* SimpleProperty.podspec */; };
+		B3642D961E5DAE0100F6CC5F /* SimpleProperty.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B3642D951E5DAE0100F6CC5F /* SimpleProperty.podspec */; };
 		CE83523A1D8134CE00939B24 /* ValuePropertyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8352391D8134CE00939B24 /* ValuePropertyObject.m */; };
 		CEEBBD1B1D73E9C000BCF524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD1A1D73E9C000BCF524 /* main.m */; };
 		CEEBBD1E1D73E9C000BCF524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD1D1D73E9C000BCF524 /* AppDelegate.m */; };
@@ -45,7 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B3642D911E5DAB2B00F6CC5F /* SimpleProperty.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleProperty.podspec; sourceTree = "<group>"; };
+		B3642D951E5DAE0100F6CC5F /* SimpleProperty.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleProperty.podspec; sourceTree = "<group>"; };
 		CE8352381D8134CE00939B24 /* ValuePropertyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValuePropertyObject.h; sourceTree = "<group>"; };
 		CE8352391D8134CE00939B24 /* ValuePropertyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValuePropertyObject.m; sourceTree = "<group>"; };
 		CEEBBD161D73E9C000BCF524 /* SimpleProperty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleProperty.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +106,7 @@
 		CEEBBD0D1D73E9C000BCF524 = {
 			isa = PBXGroup;
 			children = (
+				B3642D951E5DAE0100F6CC5F /* SimpleProperty.podspec */,
 				CEEBBD181D73E9C000BCF524 /* SimpleProperty */,
 				CEEBBD321D73E9C000BCF524 /* SimplePropertyTests */,
 				CEEBBD3D1D73E9C100BCF524 /* SimplePropertyUITests */,
@@ -126,7 +127,6 @@
 		CEEBBD181D73E9C000BCF524 /* SimpleProperty */ = {
 			isa = PBXGroup;
 			children = (
-				B3642D911E5DAB2B00F6CC5F /* SimpleProperty.podspec */,
 				CEEBBD4C1D73EA5100BCF524 /* SimpleProperty */,
 				CEEBBD1C1D73E9C000BCF524 /* AppDelegate.h */,
 				CEEBBD1D1D73E9C000BCF524 /* AppDelegate.m */,
@@ -292,7 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEBBD291D73E9C000BCF524 /* LaunchScreen.storyboard in Resources */,
-				B3642D921E5DAB2B00F6CC5F /* SimpleProperty.podspec in Resources */,
+				B3642D961E5DAE0100F6CC5F /* SimpleProperty.podspec in Resources */,
 				CEEBBD261D73E9C000BCF524 /* Assets.xcassets in Resources */,
 				CEEBBD241D73E9C000BCF524 /* Main.storyboard in Resources */,
 			);
