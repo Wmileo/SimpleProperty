@@ -34,7 +34,7 @@
                 self.initValue = @0;
             }else if ([@[@"Td",@"Tf"] containsObject:obj]) {
                 self.type = @"CGFloat,double,float,NSTimeInterval";
-                self.initValue = @0.0;
+                self.initValue = @0;
             }else if ([@[@"T@\"NSString\""] containsObject:obj]) {
                 self.type = @"NSString";
                 self.initValue = @"";
