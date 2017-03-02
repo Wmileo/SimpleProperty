@@ -32,7 +32,7 @@
 +(BOOL)isValidArrayValue:(id)value;
 +(BOOL)isValidDictionaryValue:(id)value;
 +(BOOL)isValidValue:(id)value;
-+(BOOL)isValueValidWithProperty:(Property *)property value:(id)value invalidCallBack:(void (^)(id initValue))callBack;
++(BOOL)isValueValidWithProperty:(Property *)property value:(id)value invalidCallBack:(void (^)(id validValue))callBack;
 
 +(NSArray<Property *> *)propertiesWithClass:(Class)aClass;
 

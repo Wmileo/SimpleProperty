@@ -81,12 +81,15 @@
     return [value isKindOfClass:[NSDictionary class]];
 }
 
-+(BOOL)isValueValidWithProperty:(Property *)property value:(id)value invalidCallBack:(void (^)(id initValue))callBack{
++(BOOL)isValueValidWithProperty:(Property *)property value:(id)value invalidCallBack:(void (^)(id))callBack{
     if (![self isValidValue:value]
         || ([property.type isEqualToString:@"NSArray"] && ![self isValidArrayValue:value])
         || ([property.type isEqualToString:@"NSDictionary"] && ![self isValidDictionaryValue:value])
         ) {
         if (callBack) callBack(property.initValue);
+        return NO;
+    }else if ([value isKindOfClass:[NSString class]] && [property.type containsString:@"BOOL"]) {
+        if (callBack) callBack(@([value boolValue]));
         return NO;
     }
     return YES;
