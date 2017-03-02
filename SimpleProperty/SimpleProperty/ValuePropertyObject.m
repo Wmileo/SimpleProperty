@@ -21,9 +21,11 @@
 -(void)fillValue:(id)value withProperty:(Property *)pro{
     @autoreleasepool {
         __block id newValue = value;
-        if ([PropertyTools isValueValidWithProperty:pro value:value invalidCallBack:^(id initValue) {
-            newValue = pro.initValue;
-            NSLog(@"----invalid value:%@   forKey:%@  class:%@   newValue:%@",value,pro.name,[self class],pro.initValue);
+        
+        
+        if ([PropertyTools isValueValidWithProperty:pro value:value invalidCallBack:^(id validValue) {
+            newValue = validValue;
+            NSLog(@"----invalid value:%@   forKey:%@  class:%@  type:%@   newValue:%@",value,pro.name,[self class],pro.type,validValue);
         }]) {
             if ([self respondsToSelector:@selector(instanceObjectWithProperty:)] && [self instanceObjectWithProperty:pro]) {
                 if ([pro.type isEqualToString:@"NSArray"]) {
