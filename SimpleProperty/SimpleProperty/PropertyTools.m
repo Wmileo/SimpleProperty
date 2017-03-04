@@ -88,9 +88,6 @@
         ) {
         if (callBack) callBack(property.initValue);
         return NO;
-    }else if ([value isKindOfClass:[NSString class]] && [property.type containsString:@"BOOL"]) {
-        if (callBack) callBack(@([value boolValue]));
-        return NO;
     }
     return YES;
 }

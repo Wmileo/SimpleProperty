@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3202D351E6AA5F6005BC77B /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD561D740B0000BCF524 /* Test.m */; };
+		B3202D361E6AA642005BC77B /* ARR.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD591D74163600BCF524 /* ARR.m */; };
+		B3202D371E6AA64A005BC77B /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF45B51D76B3AF0017C78F /* Father.m */; };
+		B3202D3A1E6AA6E4005BC77B /* NSString+Unrecognized.m in Sources */ = {isa = PBXBuildFile; fileRef = B3202D391E6AA6E4005BC77B /* NSString+Unrecognized.m */; };
 		B3642D961E5DAE0100F6CC5F /* SimpleProperty.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B3642D951E5DAE0100F6CC5F /* SimpleProperty.podspec */; };
 		CE83523A1D8134CE00939B24 /* ValuePropertyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8352391D8134CE00939B24 /* ValuePropertyObject.m */; };
 		CEEBBD1B1D73E9C000BCF524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD1A1D73E9C000BCF524 /* main.m */; };
@@ -45,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B3202D381E6AA6E4005BC77B /* NSString+Unrecognized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Unrecognized.h"; sourceTree = "<group>"; };
+		B3202D391E6AA6E4005BC77B /* NSString+Unrecognized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Unrecognized.m"; sourceTree = "<group>"; };
 		B3642D951E5DAE0100F6CC5F /* SimpleProperty.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleProperty.podspec; sourceTree = "<group>"; };
 		CE8352381D8134CE00939B24 /* ValuePropertyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValuePropertyObject.h; sourceTree = "<group>"; };
 		CE8352391D8134CE00939B24 /* ValuePropertyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValuePropertyObject.m; sourceTree = "<group>"; };
@@ -68,8 +74,8 @@
 		CEEBBD4E1D73EA6200BCF524 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 		CEEBBD501D74083E00BCF524 /* PropertyTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyTools.h; sourceTree = "<group>"; };
 		CEEBBD511D74083E00BCF524 /* PropertyTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyTools.m; sourceTree = "<group>"; };
-		CEEBBD551D740B0000BCF524 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
-		CEEBBD561D740B0000BCF524 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		CEEBBD551D740B0000BCF524 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test.h; path = SimplePropertyTests/Test.h; sourceTree = SOURCE_ROOT; };
+		CEEBBD561D740B0000BCF524 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Test.m; path = SimplePropertyTests/Test.m; sourceTree = SOURCE_ROOT; };
 		CEEBBD581D74163600BCF524 /* ARR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARR.h; sourceTree = "<group>"; };
 		CEEBBD591D74163600BCF524 /* ARR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARR.m; sourceTree = "<group>"; };
 		CEFF45B41D76B3AF0017C78F /* Father.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
@@ -132,6 +138,8 @@
 				CEEBBD1D1D73E9C000BCF524 /* AppDelegate.m */,
 				CEEBBD1F1D73E9C000BCF524 /* ViewController.h */,
 				CEEBBD201D73E9C000BCF524 /* ViewController.m */,
+				CEEBBD551D740B0000BCF524 /* Test.h */,
+				CEEBBD561D740B0000BCF524 /* Test.m */,
 				CEEBBD221D73E9C000BCF524 /* Main.storyboard */,
 				CEEBBD251D73E9C000BCF524 /* Assets.xcassets */,
 				CEEBBD271D73E9C000BCF524 /* LaunchScreen.storyboard */,
@@ -154,8 +162,6 @@
 			children = (
 				CEEBBD331D73E9C000BCF524 /* SimplePropertyTests.m */,
 				CEEBBD351D73E9C000BCF524 /* Info.plist */,
-				CEEBBD551D740B0000BCF524 /* Test.h */,
-				CEEBBD561D740B0000BCF524 /* Test.m */,
 				CEFF45B41D76B3AF0017C78F /* Father.h */,
 				CEFF45B51D76B3AF0017C78F /* Father.m */,
 				CEEBBD581D74163600BCF524 /* ARR.h */,
@@ -184,6 +190,8 @@
 				CE8352391D8134CE00939B24 /* ValuePropertyObject.m */,
 				CEFF45B71D76EFBD0017C78F /* AIUserDefaultObject.h */,
 				CEFF45B81D76EFBD0017C78F /* AIUserDefaultObject.m */,
+				B3202D381E6AA6E4005BC77B /* NSString+Unrecognized.h */,
+				B3202D391E6AA6E4005BC77B /* NSString+Unrecognized.m */,
 			);
 			path = SimpleProperty;
 			sourceTree = "<group>";
@@ -320,12 +328,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEBBD211D73E9C000BCF524 /* ViewController.m in Sources */,
+				B3202D3A1E6AA6E4005BC77B /* NSString+Unrecognized.m in Sources */,
+				B3202D351E6AA5F6005BC77B /* Test.m in Sources */,
 				CEFF45B91D76EFBD0017C78F /* AIUserDefaultObject.m in Sources */,
+				B3202D361E6AA642005BC77B /* ARR.m in Sources */,
 				CEEBBD1E1D73E9C000BCF524 /* AppDelegate.m in Sources */,
 				CEEBBD521D74083E00BCF524 /* PropertyTools.m in Sources */,
 				CEEBBD4F1D73EA6200BCF524 /* NSObject+Property.m in Sources */,
 				CEEBBD1B1D73E9C000BCF524 /* main.m in Sources */,
 				CE83523A1D8134CE00939B24 /* ValuePropertyObject.m in Sources */,
+				B3202D371E6AA64A005BC77B /* Father.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleProperty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ileo.SimpleProperty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -483,6 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleProperty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ileo.SimpleProperty;
 				PRODUCT_NAME = "$(TARGET_NAME)";

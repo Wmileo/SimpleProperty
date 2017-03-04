@@ -19,6 +19,8 @@
 
 @property (nonatomic, strong) ARR *dic;
 
-@property (nonatomic, assign) NSInteger heihei;
+@property (nonatomic, assign) BOOL heihei;
+
+
 
 @end

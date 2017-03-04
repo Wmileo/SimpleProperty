@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "NSObject+Property.h"
-
+#import "Test.h"
 
 @interface ViewController ()
 
@@ -21,6 +21,7 @@
     
 //    NSLog(@"%@",self.view.debugDescription);
     
+     Test *tt = [[Test alloc] initWithDictionary:@{@"heihei":@"1"}];
     
     // Do any additional setup after loading the view, typically from a nib.
 }

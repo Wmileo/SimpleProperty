@@ -31,6 +31,8 @@
     
     [t fillPropertyWithDictionary:@{@"aArr":@[@{@"iii":@"<null>"},@{@"iii":@3},@{@"iii":@4}],@"arr":@[@"啊啊啊",@"啊阿道夫啊啊",@"啊风啊啊"],@"dic":@{@"iii":@111}}];
     
+    [t fillPropertyWithDictionary:@{@"heihei":@"1"}];
+    
     ARR *arr = [[ARR alloc] init];
     [arr fillPropertyWithDictionary:@{@"heihei":@44,@"iii":@33}];
     arr.heihei = 77;

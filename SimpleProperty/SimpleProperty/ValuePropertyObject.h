@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "NSObject+Property.h"
+#import "NSString+Unrecognized.h"
+
 
 @class ValuePropertyObject;
 
