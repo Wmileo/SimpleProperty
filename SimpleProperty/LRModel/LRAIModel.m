@@ -6,16 +6,16 @@
 //  Copyright © 2016年 ileo. All rights reserved.
 //
 
-#import "AIUserDefaultObject.h"
+#import "LRAIModel.h"
 
-@interface AIUserDefaultObject ()
+@interface LRAIModel ()
 
 @property (nonatomic, copy) NSString *identification;
 @property (nonatomic, copy) NSArray<Property *> *observerProperties;
 
 @end
 
-@implementation AIUserDefaultObject
+@implementation LRAIModel
 
 -(void)dealloc{
     for (Property *pro in self.observerProperties) {

@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ValuePropertyObject.h"
+#import "LRModel.h"
 
-@protocol AIUserDefaultDelegate <NSObject>
+@protocol LRAIModelDelegate <NSObject>
 
 @optional
 
@@ -21,7 +21,7 @@
 @end
 
 
-@interface AIUserDefaultObject : ValuePropertyObject <AIUserDefaultDelegate>
+@interface LRAIModel : LRModel <LRAIModelDelegate>
 
 -(instancetype)initWithIdentification:(NSString *)identification;
 

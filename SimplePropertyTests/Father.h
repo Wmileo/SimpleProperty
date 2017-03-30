@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AIUserDefaultObject.h"
+#import "LRAIModel.h"
 
-@interface Father : AIUserDefaultObject
+@interface Father : LRAIModel
 @property (nonatomic, assign) NSInteger heihei;
 @end

@@ -6,9 +6,9 @@
 //  Copyright © 2016年 ileo. All rights reserved.
 //
 
-#import "ValuePropertyObject.h"
+#import "LRModel.h"
 
-@implementation ValuePropertyObject
+@implementation LRModel
 
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary{
     self = [self init];
@@ -33,7 +33,7 @@
                     NSMutableArray *arr = [NSMutableArray arrayWithCapacity:tmp.count];
                     __weak __typeof(self) wself = self;
                     [tmp enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                        ValuePropertyObject *instance = [wself instanceObjectWithProperty:pro];
+                        LRModel *instance = [wself instanceObjectWithProperty:pro];
                         if ([PropertyTools isValidDictionaryValue:obj]) {
                             [instance fillPropertyWithDictionary:obj];
                             [arr addObject:instance];
@@ -44,7 +44,7 @@
                     }];
                     newValue = [arr copy];
                 }else{
-                    ValuePropertyObject *instance = [self instanceObjectWithProperty:pro];
+                    LRModel *instance = [self instanceObjectWithProperty:pro];
                     if ([pro.type isEqualToString:[NSString stringWithCString:class_getName([instance class]) encoding:NSUTF8StringEncoding]] && [PropertyTools isValidDictionaryValue:value]) {
                         [instance fillPropertyWithDictionary:value];
                         newValue = instance;
@@ -82,12 +82,12 @@
     }
 }
 
-+(NSArray *)instanceObjectsWithDictionarys:(NSArray<NSDictionary *> *)dics createObject:(ValuePropertyObject *(^)())create{
++(NSArray *)instanceObjectsWithDictionarys:(NSArray<NSDictionary *> *)dics createObject:(LRModel *(^)())create{
     if ([PropertyTools isValidArrayValue:dics]) {
         NSMutableArray *arr = [NSMutableArray arrayWithCapacity:dics.count];
         [dics enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([PropertyTools isValidDictionaryValue:obj] && create) {
-                ValuePropertyObject *object = create();
+                LRModel *object = create();
                 [object fillPropertyWithDictionary:obj];
                 [arr addObject:object];
             }else{

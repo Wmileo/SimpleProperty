@@ -10,9 +10,12 @@
 		B3202D351E6AA5F6005BC77B /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD561D740B0000BCF524 /* Test.m */; };
 		B3202D361E6AA642005BC77B /* ARR.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD591D74163600BCF524 /* ARR.m */; };
 		B3202D371E6AA64A005BC77B /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF45B51D76B3AF0017C78F /* Father.m */; };
-		B3202D3A1E6AA6E4005BC77B /* NSString+Unrecognized.m in Sources */ = {isa = PBXBuildFile; fileRef = B3202D391E6AA6E4005BC77B /* NSString+Unrecognized.m */; };
-		B3642D961E5DAE0100F6CC5F /* SimpleProperty.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B3642D951E5DAE0100F6CC5F /* SimpleProperty.podspec */; };
-		CE83523A1D8134CE00939B24 /* ValuePropertyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8352391D8134CE00939B24 /* ValuePropertyObject.m */; };
+		B336258B1E8CD87C00C8D071 /* LRAIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B33625821E8CD87C00C8D071 /* LRAIModel.m */; };
+		B336258C1E8CD87C00C8D071 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = B33625841E8CD87C00C8D071 /* NSObject+Property.m */; };
+		B336258D1E8CD87C00C8D071 /* NSString+Unrecognized.m in Sources */ = {isa = PBXBuildFile; fileRef = B33625861E8CD87C00C8D071 /* NSString+Unrecognized.m */; };
+		B336258E1E8CD87C00C8D071 /* PropertyTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B33625881E8CD87C00C8D071 /* PropertyTools.m */; };
+		B336258F1E8CD87C00C8D071 /* LRModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B336258A1E8CD87C00C8D071 /* LRModel.m */; };
+		B3642D961E5DAE0100F6CC5F /* LRModel.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B3642D951E5DAE0100F6CC5F /* LRModel.podspec */; };
 		CEEBBD1B1D73E9C000BCF524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD1A1D73E9C000BCF524 /* main.m */; };
 		CEEBBD1E1D73E9C000BCF524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD1D1D73E9C000BCF524 /* AppDelegate.m */; };
 		CEEBBD211D73E9C000BCF524 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD201D73E9C000BCF524 /* ViewController.m */; };
@@ -21,14 +24,9 @@
 		CEEBBD291D73E9C000BCF524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEBBD271D73E9C000BCF524 /* LaunchScreen.storyboard */; };
 		CEEBBD341D73E9C000BCF524 /* SimplePropertyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD331D73E9C000BCF524 /* SimplePropertyTests.m */; };
 		CEEBBD3F1D73E9C100BCF524 /* SimplePropertyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD3E1D73E9C100BCF524 /* SimplePropertyUITests.m */; };
-		CEEBBD4F1D73EA6200BCF524 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD4E1D73EA6200BCF524 /* NSObject+Property.m */; };
-		CEEBBD521D74083E00BCF524 /* PropertyTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD511D74083E00BCF524 /* PropertyTools.m */; };
-		CEEBBD531D740A8F00BCF524 /* PropertyTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD511D74083E00BCF524 /* PropertyTools.m */; };
-		CEEBBD541D740A9500BCF524 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD4E1D73EA6200BCF524 /* NSObject+Property.m */; };
 		CEEBBD571D740B0000BCF524 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD561D740B0000BCF524 /* Test.m */; };
 		CEEBBD5A1D74163600BCF524 /* ARR.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEBBD591D74163600BCF524 /* ARR.m */; };
 		CEFF45B61D76B3AF0017C78F /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF45B51D76B3AF0017C78F /* Father.m */; };
-		CEFF45B91D76EFBD0017C78F /* AIUserDefaultObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF45B81D76EFBD0017C78F /* AIUserDefaultObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +47,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B3202D381E6AA6E4005BC77B /* NSString+Unrecognized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Unrecognized.h"; sourceTree = "<group>"; };
-		B3202D391E6AA6E4005BC77B /* NSString+Unrecognized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Unrecognized.m"; sourceTree = "<group>"; };
-		B3642D951E5DAE0100F6CC5F /* SimpleProperty.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleProperty.podspec; sourceTree = "<group>"; };
-		CE8352381D8134CE00939B24 /* ValuePropertyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValuePropertyObject.h; sourceTree = "<group>"; };
-		CE8352391D8134CE00939B24 /* ValuePropertyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValuePropertyObject.m; sourceTree = "<group>"; };
+		B33625811E8CD87C00C8D071 /* LRAIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRAIModel.h; sourceTree = "<group>"; };
+		B33625821E8CD87C00C8D071 /* LRAIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRAIModel.m; sourceTree = "<group>"; };
+		B33625831E8CD87C00C8D071 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		B33625841E8CD87C00C8D071 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		B33625851E8CD87C00C8D071 /* NSString+Unrecognized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Unrecognized.h"; sourceTree = "<group>"; };
+		B33625861E8CD87C00C8D071 /* NSString+Unrecognized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Unrecognized.m"; sourceTree = "<group>"; };
+		B33625871E8CD87C00C8D071 /* PropertyTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyTools.h; sourceTree = "<group>"; };
+		B33625881E8CD87C00C8D071 /* PropertyTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyTools.m; sourceTree = "<group>"; };
+		B33625891E8CD87C00C8D071 /* LRModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRModel.h; sourceTree = "<group>"; };
+		B336258A1E8CD87C00C8D071 /* LRModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRModel.m; sourceTree = "<group>"; };
+		B3642D951E5DAE0100F6CC5F /* LRModel.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LRModel.podspec; sourceTree = "<group>"; };
 		CEEBBD161D73E9C000BCF524 /* SimpleProperty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleProperty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEBBD1A1D73E9C000BCF524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEEBBD1C1D73E9C000BCF524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,18 +74,12 @@
 		CEEBBD3A1D73E9C100BCF524 /* SimplePropertyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePropertyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEBBD3E1D73E9C100BCF524 /* SimplePropertyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplePropertyUITests.m; sourceTree = "<group>"; };
 		CEEBBD401D73E9C100BCF524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEEBBD4D1D73EA6200BCF524 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
-		CEEBBD4E1D73EA6200BCF524 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
-		CEEBBD501D74083E00BCF524 /* PropertyTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyTools.h; sourceTree = "<group>"; };
-		CEEBBD511D74083E00BCF524 /* PropertyTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyTools.m; sourceTree = "<group>"; };
 		CEEBBD551D740B0000BCF524 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test.h; path = SimplePropertyTests/Test.h; sourceTree = SOURCE_ROOT; };
 		CEEBBD561D740B0000BCF524 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Test.m; path = SimplePropertyTests/Test.m; sourceTree = SOURCE_ROOT; };
 		CEEBBD581D74163600BCF524 /* ARR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARR.h; sourceTree = "<group>"; };
 		CEEBBD591D74163600BCF524 /* ARR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARR.m; sourceTree = "<group>"; };
 		CEFF45B41D76B3AF0017C78F /* Father.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
 		CEFF45B51D76B3AF0017C78F /* Father.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
-		CEFF45B71D76EFBD0017C78F /* AIUserDefaultObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIUserDefaultObject.h; sourceTree = "<group>"; };
-		CEFF45B81D76EFBD0017C78F /* AIUserDefaultObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIUserDefaultObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +107,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B33625801E8CD87C00C8D071 /* LRModel */ = {
+			isa = PBXGroup;
+			children = (
+				B33625811E8CD87C00C8D071 /* LRAIModel.h */,
+				B33625821E8CD87C00C8D071 /* LRAIModel.m */,
+				B33625891E8CD87C00C8D071 /* LRModel.h */,
+				B336258A1E8CD87C00C8D071 /* LRModel.m */,
+				B33625831E8CD87C00C8D071 /* NSObject+Property.h */,
+				B33625841E8CD87C00C8D071 /* NSObject+Property.m */,
+				B33625851E8CD87C00C8D071 /* NSString+Unrecognized.h */,
+				B33625861E8CD87C00C8D071 /* NSString+Unrecognized.m */,
+				B33625871E8CD87C00C8D071 /* PropertyTools.h */,
+				B33625881E8CD87C00C8D071 /* PropertyTools.m */,
+			);
+			path = LRModel;
+			sourceTree = "<group>";
+		};
 		CEEBBD0D1D73E9C000BCF524 = {
 			isa = PBXGroup;
 			children = (
-				B3642D951E5DAE0100F6CC5F /* SimpleProperty.podspec */,
+				B3642D951E5DAE0100F6CC5F /* LRModel.podspec */,
 				CEEBBD181D73E9C000BCF524 /* SimpleProperty */,
 				CEEBBD321D73E9C000BCF524 /* SimplePropertyTests */,
 				CEEBBD3D1D73E9C100BCF524 /* SimplePropertyUITests */,
@@ -133,7 +148,7 @@
 		CEEBBD181D73E9C000BCF524 /* SimpleProperty */ = {
 			isa = PBXGroup;
 			children = (
-				CEEBBD4C1D73EA5100BCF524 /* SimpleProperty */,
+				B33625801E8CD87C00C8D071 /* LRModel */,
 				CEEBBD1C1D73E9C000BCF524 /* AppDelegate.h */,
 				CEEBBD1D1D73E9C000BCF524 /* AppDelegate.m */,
 				CEEBBD1F1D73E9C000BCF524 /* ViewController.h */,
@@ -177,23 +192,6 @@
 				CEEBBD401D73E9C100BCF524 /* Info.plist */,
 			);
 			path = SimplePropertyUITests;
-			sourceTree = "<group>";
-		};
-		CEEBBD4C1D73EA5100BCF524 /* SimpleProperty */ = {
-			isa = PBXGroup;
-			children = (
-				CEEBBD501D74083E00BCF524 /* PropertyTools.h */,
-				CEEBBD511D74083E00BCF524 /* PropertyTools.m */,
-				CEEBBD4D1D73EA6200BCF524 /* NSObject+Property.h */,
-				CEEBBD4E1D73EA6200BCF524 /* NSObject+Property.m */,
-				CE8352381D8134CE00939B24 /* ValuePropertyObject.h */,
-				CE8352391D8134CE00939B24 /* ValuePropertyObject.m */,
-				CEFF45B71D76EFBD0017C78F /* AIUserDefaultObject.h */,
-				CEFF45B81D76EFBD0017C78F /* AIUserDefaultObject.m */,
-				B3202D381E6AA6E4005BC77B /* NSString+Unrecognized.h */,
-				B3202D391E6AA6E4005BC77B /* NSString+Unrecognized.m */,
-			);
-			path = SimpleProperty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEBBD291D73E9C000BCF524 /* LaunchScreen.storyboard in Resources */,
-				B3642D961E5DAE0100F6CC5F /* SimpleProperty.podspec in Resources */,
+				B3642D961E5DAE0100F6CC5F /* LRModel.podspec in Resources */,
 				CEEBBD261D73E9C000BCF524 /* Assets.xcassets in Resources */,
 				CEEBBD241D73E9C000BCF524 /* Main.storyboard in Resources */,
 			);
@@ -327,16 +325,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B336258D1E8CD87C00C8D071 /* NSString+Unrecognized.m in Sources */,
 				CEEBBD211D73E9C000BCF524 /* ViewController.m in Sources */,
-				B3202D3A1E6AA6E4005BC77B /* NSString+Unrecognized.m in Sources */,
 				B3202D351E6AA5F6005BC77B /* Test.m in Sources */,
-				CEFF45B91D76EFBD0017C78F /* AIUserDefaultObject.m in Sources */,
+				B336258C1E8CD87C00C8D071 /* NSObject+Property.m in Sources */,
 				B3202D361E6AA642005BC77B /* ARR.m in Sources */,
+				B336258E1E8CD87C00C8D071 /* PropertyTools.m in Sources */,
 				CEEBBD1E1D73E9C000BCF524 /* AppDelegate.m in Sources */,
-				CEEBBD521D74083E00BCF524 /* PropertyTools.m in Sources */,
-				CEEBBD4F1D73EA6200BCF524 /* NSObject+Property.m in Sources */,
+				B336258F1E8CD87C00C8D071 /* LRModel.m in Sources */,
 				CEEBBD1B1D73E9C000BCF524 /* main.m in Sources */,
-				CE83523A1D8134CE00939B24 /* ValuePropertyObject.m in Sources */,
+				B336258B1E8CD87C00C8D071 /* LRAIModel.m in Sources */,
 				B3202D371E6AA64A005BC77B /* Father.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,9 +345,7 @@
 			files = (
 				CEEBBD5A1D74163600BCF524 /* ARR.m in Sources */,
 				CEFF45B61D76B3AF0017C78F /* Father.m in Sources */,
-				CEEBBD531D740A8F00BCF524 /* PropertyTools.m in Sources */,
 				CEEBBD571D740B0000BCF524 /* Test.m in Sources */,
-				CEEBBD541D740A9500BCF524 /* NSObject+Property.m in Sources */,
 				CEEBBD341D73E9C000BCF524 /* SimplePropertyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

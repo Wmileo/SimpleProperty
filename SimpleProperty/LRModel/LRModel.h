@@ -11,14 +11,14 @@
 #import "NSString+Unrecognized.h"
 
 
-@class ValuePropertyObject;
+@class LRModel;
 
-@protocol ValuePropertyDelegate <NSObject>
+@protocol LRModelDelegate <NSObject>
 
 @optional
 #pragma mark - 赋值
 -(BOOL)willTryToValueWithKey:(NSString *)key value:(id)value;//当从dic取数据赋值时调用,返回YES 赋值，返回NO不赋值
--(ValuePropertyObject *)instanceObjectWithProperty:(Property *)property;//返回property对应的实例
+-(LRModel *)instanceObjectWithProperty:(Property *)property;//返回property对应的实例
 -(void)didValueWithProperty:(Property *)property value:(id)value;//给属性赋值完调用
 -(void)didValueAllProperties;//给赋值属性都赋值了调用
 
@@ -27,7 +27,7 @@
 
 
 //保存赋值只支持基本类型，NSNumber,NSString,NSArray,NSDictionary
-@interface ValuePropertyObject : NSObject <ValuePropertyDelegate>
+@interface LRModel : NSObject <LRModelDelegate>
 
 #pragma mark - 赋值
 -(instancetype)initWithDictionary:(NSDictionary *)dictionary;
@@ -35,6 +35,6 @@
 -(void)fillPropertyWithDictionary:(NSDictionary *)dictionary;
 -(void)fillValue:(id)value withProperty:(Property *)pro;
 
-+(NSArray *)instanceObjectsWithDictionarys:(NSArray<NSDictionary *> *)dics createObject:(ValuePropertyObject *(^)())create;
++(NSArray *)instanceObjectsWithDictionarys:(NSArray<NSDictionary *> *)dics createObject:(LRModel *(^)())create;
 
 @end
