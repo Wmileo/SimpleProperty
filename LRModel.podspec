@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "5.0"
   s.source       = { :git => "https://github.com/Wmileo/SimpleProperty.git", :tag => s.version.to_s }
-  s.source_files  = "SimpleProperty/LRModel/*.{h,m}"
+  s.source_files = "SimpleProperty/LRModel/*.{h,m}"
 
   s.requires_arc = true
 end
