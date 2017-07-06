@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "LRModel"
-  s.version      = "0.2.0"
+  s.version      = "0.2.1"
   s.summary      = "Property pick up"
   s.description  = <<-DESC
 					 Easy to get property value

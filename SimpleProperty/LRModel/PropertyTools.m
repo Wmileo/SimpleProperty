@@ -88,6 +88,9 @@
         ) {
         if (callBack) callBack(property.initValue);
         return NO;
+    }else if ([property.type isEqualToString:@"NSString"] && ![value isKindOfClass:[NSString class]]) {
+        if (callBack) callBack([NSString stringWithFormat:@"%@",value]);
+        return NO;
     }
     return YES;
 }
