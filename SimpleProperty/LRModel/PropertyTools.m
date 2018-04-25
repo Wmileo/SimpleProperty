@@ -49,7 +49,7 @@
                 self.initValue = nil;
             }else{
                 self.initValue = nil;
-                NSLog(@"----->>>----unkown-->>>  type:%@   name:%@ ",obj,self.name);
+//                NSLog(@"----->>>----unkown-->>>  type:%@   name:%@ ",obj,self.name);
             }
             *stop = YES;
         }
@@ -87,6 +87,9 @@
         || ([property.type isEqualToString:@"NSDictionary"] && ![self isValidDictionaryValue:value])
         ) {
         if (callBack) callBack(property.initValue);
+        return NO;
+    }else if ([property.type isEqualToString:@"NSString"] && ![value isKindOfClass:[NSString class]]) {
+        if (callBack) callBack([NSString stringWithFormat:@"%@",value]);
         return NO;
     }
     return YES;

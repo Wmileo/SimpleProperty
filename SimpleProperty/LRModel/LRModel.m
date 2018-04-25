@@ -25,7 +25,7 @@
         
         if ([PropertyTools isValueValidWithProperty:pro value:value invalidCallBack:^(id validValue) {
             newValue = validValue;
-            NSLog(@"----invalid value:%@   forKey:%@  class:%@  type:%@   newValue:%@",value,pro.name,[self class],pro.type,validValue);
+//            NSLog(@"----invalid value:%@   forKey:%@  class:%@  type:%@   newValue:%@",value,pro.name,[self class],pro.type,validValue);
         }]) {
             if ([self respondsToSelector:@selector(instanceObjectWithProperty:)] && [self instanceObjectWithProperty:pro]) {
                 if ([pro.type isEqualToString:@"NSArray"]) {
@@ -39,7 +39,7 @@
                             [arr addObject:instance];
                         }else{
                             [arr addObject:obj];
-                            NSLog(@"----invalid value:%@   forKey:%@ index:%zd  class:%@ newValue:%@",obj,pro.name,idx,[instance class],obj);
+//                            NSLog(@"----invalid value:%@   forKey:%@ index:%zd  class:%@ newValue:%@",obj,pro.name,idx,[instance class],obj);
                         }
                     }];
                     newValue = [arr copy];
@@ -49,7 +49,7 @@
                         [instance fillPropertyWithDictionary:value];
                         newValue = instance;
                     }else{
-                        NSLog(@"----invalid value:%@   forKey:%@  class:%@ newValue:%@",value,pro.name,[instance class],value);
+//                        NSLog(@"----invalid value:%@   forKey:%@  class:%@ newValue:%@",value,pro.name,[instance class],value);
                         newValue = pro.initValue;
                     }
                 }
@@ -82,7 +82,7 @@
     }
 }
 
-+(NSArray *)instanceObjectsWithDictionarys:(NSArray<NSDictionary *> *)dics createObject:(LRModel *(^)())create{
++(NSArray *)instanceObjectsWithDictionarys:(NSArray<NSDictionary *> *)dics createObject:(LRModel *(^)(void))create{
     if ([PropertyTools isValidArrayValue:dics]) {
         NSMutableArray *arr = [NSMutableArray arrayWithCapacity:dics.count];
         [dics enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -91,13 +91,13 @@
                 [object fillPropertyWithDictionary:obj];
                 [arr addObject:object];
             }else{
-                NSLog(@"----no creat instance   or   invalid value:%@ (+instanceObjects)  no a dictionary object",obj);
+//                NSLog(@"----no creat instance   or   invalid value:%@ (+instanceObjects)  no a dictionary object",obj);
                 [arr addObject:obj];
             }
         }];
         return [arr copy];
     }else{
-        NSLog(@"----invalid value:%@ new value:%@ (+instanceObjects)  no a array object",dics,@[]);
+//        NSLog(@"----invalid value:%@ new value:%@ (+instanceObjects)  no a array object",dics,@[]);
         return @[];
     }
 }

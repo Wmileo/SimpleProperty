@@ -87,9 +87,9 @@
     if (!pro) return;//无该属性
     
     __weak __typeof(self) wself = self;
-    NSString *className = [NSString  stringWithCString:class_getName([self class]) encoding:NSUTF8StringEncoding];
+//    NSString *className = [NSString  stringWithCString:class_getName([self class]) encoding:NSUTF8StringEncoding];
     [PropertyTools isValueValidWithProperty:pro value:value invalidCallBack:^(id initValue) {
-        NSLog(@"class<%@> auto save property (invalidValue:%@ forKey:%@ newValue:%@)",className,value,pro.name,initValue);
+//        NSLog(@"class<%@> auto save property (invalidValue:%@ forKey:%@ newValue:%@)",className,value,pro.name,initValue);
         value = initValue;
         [wself setValue:value forKey:pro.name];
     }];
@@ -102,7 +102,7 @@
     if (!([self respondsToSelector:@selector(willSaveUserDefaultValue:withProperty:)] && ![wself willSaveUserDefaultValue:value withProperty:pro])) {
         [userDefault setObject:value forKey:keyName];
         [userDefault synchronize];
-        NSLog(@"class<%@> auto save property -%@->%@ ->new '%@'",className,keyPath,change,value);
+//        NSLog(@"class<%@> auto save property -%@->%@ ->new '%@'",className,keyPath,change,value);
     }
     
 }
