@@ -49,7 +49,7 @@
                 self.initValue = nil;
             }else{
                 self.initValue = nil;
-                NSLog(@"----->>>----unkown-->>>  type:%@   name:%@ ",obj,self.name);
+//                NSLog(@"----->>>----unkown-->>>  type:%@   name:%@ ",obj,self.name);
             }
             *stop = YES;
         }

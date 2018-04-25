@@ -35,6 +35,6 @@
 -(void)fillPropertyWithDictionary:(NSDictionary *)dictionary;
 -(void)fillValue:(id)value withProperty:(Property *)pro;
 
-+(NSArray *)instanceObjectsWithDictionarys:(NSArray<NSDictionary *> *)dics createObject:(LRModel *(^)())create;
++(NSArray *)instanceObjectsWithDictionarys:(NSArray<NSDictionary *> *)dics createObject:(LRModel *(^)(void))create;
 
 @end
